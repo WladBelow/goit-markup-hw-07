@@ -1,0 +1,139 @@
+
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__contact {
+    margin-left: auto;
+    display: block;
+}
+
+.header__contacts-list {
+    display: flex;
+    list-style: none;
+}
+
+.header__contacts-icon {
+    margin-right: 10px;
+    fill: #757575;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header__list {
+    list-style: none;
+    display: flex;
+    column-gap: 50px;
+    padding-left: 0;
+}
+
+.header__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-title-color);
+    text-decoration: none;
+    padding-bottom: 32px;
+
+    position: relative;
+
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+    &-link:hover::after {
+            background-color: var(--main-page-highlight);
+            transform: scaleX(1);
+            opacity: 1;
+            transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function),
+            background-color 250ms var(--timing-function);
+        }
+    &:hover,
+    &:focus {
+            color: var(--main-page-highlight);
+        }
+}
+
+
+.underline {
+    display: inline-block;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 4px;
+        left: 0;
+        bottom: 0;
+        border-radius: 2px;
+        background-color: var(--main-page-highlight);
+        }
+}
+
+.accent {
+    color: #2196F3;
+}
+
+.header__mail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    margin-right: 50px;
+    color: #757575;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--main-page-highlight);
+    }
+}
+
+.header__tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #757575;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--main-page-highlight);
+    }
+}
+
+.header__contacts-icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+
+    .header__mail:hover &,
+    .header__mail:focus & {
+        fill: var(--main-page-highlight);
+    }
+    
+        .header__tel:hover &,
+        .header__tel:focus & {
+            fill: var(--main-page-highlight);
+        }
+}
+
+
+
+
+

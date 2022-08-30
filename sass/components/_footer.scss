@@ -1,0 +1,199 @@
+.footer {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__logo {
+            text-decoration: none;
+            font-family: 'Raleway';
+            display: inline-block;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 31px;
+            letter-spacing: 0.03em;
+            margin-bottom: 20px;
+            color: #2196F3;
+        }
+    &__ico {
+            display: flex;
+            align-items: baseline;
+        }
+    &__title {
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+    &__contacts {
+            display: flex;
+            flex-direction: column;
+    
+            margin-left: 70px;
+    
+        }
+    &__soc {
+            display: flex;
+            justify-content: center;
+            padding-left: 0;
+            gap: 10px;
+        }
+    
+    &__soc-link {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition-property: background;
+            transition-duration: 250ms;
+            transition-timing-function: var(--timing-function);
+    
+            &:hover,
+            &:focus {
+                background-color: #2196F3;
+            }
+        }
+    
+    &__title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+    
+            color: #FFFFFF;
+        }
+    
+    &__list {
+            list-style: none;
+            padding-left: 0;
+        }
+    &__adress-text {
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: #FFFFFF;
+            margin-bottom: 9px;
+        }
+    
+    &__adress {
+            font-style: normal;
+            margin-bottom: 9px;
+        }
+    
+    &__item {
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 9px;
+        }
+}
+
+
+
+.footer__soc-icons {
+    fill: #FFFFFF;
+
+    .footer__soc-link:hover &,
+    .footer__soc-link:focus & {
+        fill: #FFFFFF;
+    }
+}
+
+
+.footer__tel {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--main-page-highlight);
+    }
+}
+
+.footer__mail {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--main-page-highlight);
+    }
+}
+
+.footer__input {
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    transition: border-color 250ms var(--timing-function);
+
+    &:focus {
+            border-color: var(--main-page-highlight);
+        }
+    &::placeholder {
+            font-size: 16px;
+            line-height: 1.25;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+        }
+}
+
+.footer__sub {
+    margin-left: 93px;
+}
+
+.footer__sub-wrap {
+    display: flex;
+}
+
+.btn__sub {
+    margin-left: 10px;
+    padding: 10px 28px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: var(--main-page-highlight);
+    color: #fff;
+    transform: scale(1);
+    transition: transform 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        transform: scale(1.02);
+    }
+}
+
+.footer__sub-icon {
+    margin-left: 10px;
+    fill: #fff;
+}

@@ -1,0 +1,29 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.list {
+    list-style: none;
+}
+
+
+.header {
+    background-color: #FFFFFF;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
